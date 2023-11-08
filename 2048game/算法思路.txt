@@ -1,0 +1,152 @@
+1、 运算过程 ***
+
+void Leftrun(){
+    int j, i;
+    for (i = 0, j = 0; j < 4; j++) {
+        /* 找出k后面第一个不为空的项，下标为j，之后分三种情况 */
+        if (b[j] > 0) { 
+            /* P1情况，合并 */
+            if (b[i] == b[j]) { 
+                b[i] = 2 * b[i];
+                b[j] = 0;
+                i= i + 1;
+            } 
+            /* P2情况，移动 */
+            else if (b[i] == 0) { 
+                b[i] = b[j];
+                b[j] = 0;            
+            } 
+            /* P3情况，碰撞 */
+            else { 
+                b[i + 1] = b[j];
+                /* 如果原先两数不挨着 */
+                if (j != i + 1) { 
+                    b[j] = 0;
+                }
+                i =i + 1;
+            }
+        }
+    }
+}
+
+2、随机赋值 ***
+
+void randomint(){
+
+}
+
+3、判断上、下、左、右 (W、S、A、D) 按键 ***
+
+void keyjudge(){
+
+}
+
+4、游戏界面二维表格 ***
+
+void initUI(){
+
+}
+
+5、游戏初始界面 ***
+
+void initgame(){
+    
+}
+
+6、游戏胜利界面 ***
+
+void win(){
+
+}
+
+7、游戏失败界面 ***
+
+void lose(){
+    
+}
+
+8、判断游戏是否结束 ***
+
+void Gamejudge(int array[4][4]{
+    int flag = 0;
+    int i;
+      for (i = 0; i < 4; ++i) {
+          int j;
+          for (j = 0; j < 3; ++j) {
+              /* 横向和纵向比较挨着的两个元素是否相等，若有相等则游戏不结束 */
+              if (array[i][j] == array[i][j + 1] || array[j][i] == array[j + 1][i]) {
+                 return;
+             }
+         }
+     }
+     for(int i = 0; i < 4; i++){
+        for (int j = 0; j < 4; j++){
+            if(array[i][j] == 2048){
+                clear();
+                refresh();
+                endwin();
+                Win(array);
+            }
+    clear();
+    refresh();
+    endwin();
+    Lose(array);
+    
+}
+
+void Gamejudge(int array[4][4]){
+    int flag = 0;
+    for(int i = 0; i < 4; i++){
+        for (int j = 0; j < 4; j++){
+            if(array[i][j] == 2048){
+                clear();
+                refresh();
+                endwin();
+                Win(array);
+            }
+            else{
+                if(board[i][j] == board[i][j + 1] || board[j][i] == board[j + 1][i]){
+                    flag = 1;
+                }
+            }
+        }   
+    }
+
+    if(flag == 1){
+        
+    }
+    else{
+        clear();
+        refresh();
+        endwin();
+        Lose(array);
+    }
+}
+
+void Gamejudge(int array[4][4]){
+    int flag = 0;
+    for(int i = 0; i < 4; i++){
+        for (int j = 0; j < 4; j++){
+            if(array[i][j] == 2048){
+                clear();
+
+                Win(array);
+            }
+            else{
+                if(array[i][j] == array[i + 1][j] || array[i][j] == array[i][j + 1] || array[i][j] == array[i][j - 1] || array[i][j] == array[i - 1][j]){
+                    flag = 1;
+                }
+            }
+        }   
+    }
+
+    if(flag == 1){
+        
+    }
+    else{
+        clear();
+        refresh();
+        endwin();
+        Lose(array);
+    }
+}
