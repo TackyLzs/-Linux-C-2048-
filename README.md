@@ -17,3 +17,5 @@ https://blog.csdn.net/weixin_43855330/article/details/104219924
 ```
 ./gamestart.sh
 ```
+# 注意事项
+启动前先确保你的终端界面不能太小，否则会出现游戏界面内容溢出的BUG
