@@ -25,4 +25,5 @@ https://blog.csdn.net/weixin_43855330/article/details/104219924
 B站：https://space.bilibili.com/3546554459752812?spm_id_from=333.1007.0.0
 CSDN：https://blog.csdn.net/MoSong_TacLi?spm=1000.2115.3001.5343
 ```
-![打赏](https://github.com/TackyLzs/-Linux-C-2048-/assets/97657869/8ebee451-ad08-4f19-8523-530e89e3b95d)
+(正在为自己的小项目筹备资金，如果这篇资料对你有帮助，请多多支持~)
+![打赏](https://github.com/TackyLzs/-Linux-C-2048-/assets/97657869/fc3d4ba7-d409-4aaa-8b83-6096f6988b57)
