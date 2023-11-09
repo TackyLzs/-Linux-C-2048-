@@ -19,3 +19,10 @@ https://blog.csdn.net/weixin_43855330/article/details/104219924
 ```
 # 注意事项
 启动前先确保你的终端界面不能太小，否则会出现游戏界面内容溢出的BUG
+# 最后
+希望大家关注我的相关账号，我也会努力更新：
+```
+B站：https://space.bilibili.com/3546554459752812?spm_id_from=333.1007.0.0
+CSDN：https://blog.csdn.net/MoSong_TacLi?spm=1000.2115.3001.5343
+```
+![打赏](https://github.com/TackyLzs/-Linux-C-2048-/assets/97657869/8ebee451-ad08-4f19-8523-530e89e3b95d)
